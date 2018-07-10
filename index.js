@@ -31,6 +31,7 @@ class TemplateR{
     }
     twigAdd(o){
         let md5Twig = md5(o.twig);
+        let p = null;
         if(
             !R.find(R.propEq('md5Twig',md5Twig))(this._data)
             && 
