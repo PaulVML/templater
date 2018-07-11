@@ -39,7 +39,8 @@ class TemplateR{
         ){
             this.twig.twig({
                 id: o.id,
-                data: o.twig
+                data: o.twig,
+                allowInlineIncludes: true,
             });
             this._data.push({
                 id: o.id,
