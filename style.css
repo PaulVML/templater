@@ -7457,38 +7457,118 @@ form label {
 }
 
 /* Icons */
-.icon24 {
-  width: 24px;
-  height: 24px;
-}
-
 .icon-svg {
-  background-repeat: no-repeat;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  vertical-align: bottom;
 }
 
-.svg-color {
-  fill-rule: evenodd;
+body {
+  color: green;
 }
 
-i.svg-primary > svg path#path-1.svg-color {
-  fill: #066df4;
+g#fill-icon-add {
+  fill: currentColor;
 }
 
-i.svg-primary-dark > svg path#path-1.svg-color {
-  fill: #002351;
+g#fill-icon-attachment {
+  fill: currentColor;
 }
 
-i.svg-light > svg path#path-1.svg-color {
-  fill: white;
+g#fill-icon-back {
+  fill: currentColor;
 }
 
-i.svg-dark > svg path#path-1.svg-color {
-  fill: #333;
+g#fill-icon-cart {
+  fill: currentColor;
 }
 
-i.svg-secondary > svg path#path-1.svg-color {
-  fill: #98e749;
+g#fill-icon-user {
+  fill: currentColor;
+}
+
+g#fill-icon-category-collection {
+  fill: currentColor;
+}
+
+g#fill-icon-category-medicine {
+  fill: currentColor;
+}
+
+g#fill-icon-category-patient-material {
+  fill: currentColor;
+}
+
+g#fill-icon-check {
+  fill: currentColor;
+}
+
+g#fill-icon-close {
+  fill: currentColor;
+}
+
+g#fill-icon-conversation-alert {
+  fill: currentColor;
+}
+
+g#fill-icon-conversation {
+  fill: currentColor;
+}
+
+g#fill-icon-create {
+  fill: currentColor;
+}
+
+g#fill-icon-dislike {
+  fill: currentColor;
+}
+
+g#fill-icon-down-arrow {
+  fill: currentColor;
+}
+
+g#fill-icon-download {
+  fill: currentColor;
+}
+
+g#fill-icon-favourite {
+  fill: currentColor;
+}
+
+g#fill-icon-filter {
+  fill: currentColor;
+}
+
+g#fill-icon-help {
+  fill: currentColor;
+}
+
+g#fill-icon-info {
+  fill: currentColor;
+}
+
+g#fill-icon-like {
+  fill: currentColor;
+}
+
+g#fill-icon-menu {
+  fill: currentColor;
+}
+
+g#fill-icon-notification {
+  fill: currentColor;
+}
+
+g#fill-icon-search {
+  fill: currentColor;
+}
+
+g#fill-icon-send-to {
+  fill: currentColor;
+}
+
+g#fill-icon-send {
+  fill: currentColor;
 }
 
