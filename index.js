@@ -126,6 +126,4 @@ class TemplateR{
     }
 }
 
-const instance = new TemplateR();
-
-export default instance;
+const templateR = new TemplateR();
