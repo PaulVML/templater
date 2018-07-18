@@ -58,9 +58,11 @@ class TemplateR{
         }else if(
           p = R.find(R.propEq('md5Twig',md5Twig))(this._data)
         ){
-            console.error('Warning: Template Already exists');
-            console.log('Original',p);
-            console.log('Yours',o);
+            if(!this.isSilent){
+                console.warn('Warning: Template Already exists');
+                console.log('Original',p);
+                console.log('Yours',o);
+            }
             if(p.id!=o.id){
                 this._ids.push({ref:p.id,id:o.id,md5Twig:md5Twig});
             }
@@ -84,9 +86,11 @@ class TemplateR{
                    return this.twigAdd(o);
                 })
                 .catch((e)=>{
-                    console.log('Could not fetch the template',o);
-                    console.log('This is usually due to a CORS issue');
-                    console.log(e);
+                    if(!this.isSilent){
+                        console.warn('Could not fetch the template',o);
+                        console.log('This is usually due to a CORS issue');
+                        console.log(e);
+                    }
                     o.error = 'could not fetch this template, this is usually something to do with CORS';
                     return o;
                 });
@@ -94,8 +98,10 @@ class TemplateR{
     }
     renderToString(o){
       if(!o.ref || !o.data){
-        console.error('You have not given me the right type of object');
-        console.log('Expected Object:',{ref:'template reference',data:'data you would like to use in the template'});
+        if(!this.isSilent){
+            console.warn('You have not given me the right type of object');
+            console.log('Expected Object:',{ref:'template reference',data:'data you would like to use in the template'});
+        }
       }
       let ref = R.find(R.propEq('id',o.ref))(this._ids);
       ref = typeof ref.ref != 'undefined' ? ref.ref:ref.id;
