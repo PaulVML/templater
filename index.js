@@ -1,8 +1,3 @@
-import * as R from 'ramda';
-import * as RA from 'ramda-adjunct';
-import Twig from 'twig';
-import axios from 'axios';
-import md5 from 'md5';
 
 class TemplateR{
     constructor(){
