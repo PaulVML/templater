@@ -7,12 +7,16 @@ class TemplateR{
           this._urls = [];
           this.cors = '';
           this.twig = Twig;
+          this.isSilent = true;
           this.loader = new Promise((resolve,reject)=>{
               resolve();
           });
           TemplateR.instance = this;
         }
         return TemplateR.instance;
+    }
+    silent(isIt){
+        this.silent = isIt;
     }
     twigLoader(o){
         this.loader = RA.allP(
